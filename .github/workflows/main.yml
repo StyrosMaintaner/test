@@ -16,4 +16,6 @@ jobs:
 
       - name: Run VPS via SSHX
         run: |
+          sudo apt update
+          sudo apt upgrade
           curl -sSf https://sshx.io/get | sh -s run
